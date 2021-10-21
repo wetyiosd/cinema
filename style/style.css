@@ -1,6 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: #621402;
 	font-family: 'Roboto', sans-serif;
+	color: white;
 }
 
 .conteiner {
@@ -9,6 +14,11 @@ body {
 }
 
 .header {
+	min-height: 100vh;
+	background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(img/bg.jpg) no-repeat center top / cover;
+}
+
+.navbar {
 	display: flex;
 	align-items: center;
 	padding-top: 30px;
@@ -43,4 +53,123 @@ body {
 	height: 33px;
 	border-radius: 50%;
 	margin-left: 11px;
+}
+
+.film {
+	color: white;
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+}
+
+.film_title_small {
+	opacity: 0.5;
+	font-size: 24px;
+	line-height: 150%;
+}
+
+.film_title {
+	font-size: 36px;
+	line-height: 42px;
+	margin-top: 11px;
+	margin-bottom: 23px;
+}
+
+.film_description {
+	font-size: 16px;
+	line-height: 150%;
+	max-width: 560px;
+}
+
+.film_treiler {
+	margin: auto;
+}
+
+.film_ditails {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.time {
+	display: flex;
+	align-items: center;
+}
+
+.time_icon {
+	margin-right: 14px;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	margin-left: 34px;
+}
+
+.rating_current {
+	font-size: 24px;
+	line-height: 150%;
+}
+
+
+.rating_icon {
+	margin-right: 14px;
+}
+
+.session {
+	padding-top: 46px;
+	padding-bottom: 63px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	margin-top: 62px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.session_lable {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.session_date_block {
+	display: flex;
+}
+
+.session_date_item {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(225, 225, 225, 0.5);
+	box-sizing: border-box;
+	border-radius: 5px;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+
+	transition: background-color 0.2s;
+}
+
+.session_month {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.session_day {
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 900;
+}
+
+.session_week {
+	font-size: 19px;
+	line-height: 22px;
+}
+
+.session_date_item:hover {
+	background-color: #FE8E05;
+	color: #621402;
 }

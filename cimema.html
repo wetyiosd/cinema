@@ -11,34 +11,116 @@
 </head>
 <body>
 
-	<header class="header conteiner">
-		<a href="/">
-			<img src="image/logo.svg" alt="Logo">
-		</a>
+	<header class="header">
+		<div class="navbar conteiner">
+			<a href="/">
+				<img src="image/logo.svg" alt="Logo">
+			</a>
 
-		<nav class="nav">
-			<ul class="menu">
-				<li class="menu_item">
-					<a href="#" class="menu_link">Главная</a>
-				</li>
-				<li class="menu_item">
-					<a href="#" class="menu_link">Фильмы</a>
-				</li>
-				<li class="menu_item">
-					<a href="#" class="menu_link">Кинотеатры</a>
-				</li>
-				<li class="menu_item">
-					<a href="#" class="menu_link">События</a>
-				</li>
-				<li class="menu_item">
-					<a href="#" class="menu_link">Поддержка</a>
-				</li>
-			</ul>
-		</nav>
+			<nav class="nav">
+				<ul class="menu">
+					<li class="menu_item">
+						<a href="#" class="menu_link">Главная</a>
+					</li>
+					<li class="menu_item">
+						<a href="#" class="menu_link">Фильмы</a>
+					</li>
+					<li class="menu_item">
+						<a href="#" class="menu_link">Кинотеатры</a>
+					</li>
+					<li class="menu_item">
+						<a href="#" class="menu_link">События</a>
+					</li>
+					<li class="menu_item">
+						<a href="#" class="menu_link">Поддержка</a>
+					</li>
+				</ul>
+			</nav>
 
-		<div class="user">
-			<span class="user_text"> Привет, Мила</span>
-			<img class="avatar" src="image/user.png" alt="user">
+			<div class="user">
+				<span class="user_text"> Привет, Мила</span>
+				<img class="avatar" src="image/user.png" alt="user">
+			</div>
+		</div>
+
+		<div class="film conteiner">
+			<div class="film_info">
+				<small class="film_title_small">Avengers: Infinity War</small>
+
+				<h1 class="film_title">Мстители: война бесконечности</h1>
+
+				<p class="film_description">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.</p>
+
+				<div class="film_ditails">
+					<div class="time">
+						<img src="image/clock.svg" alt="время" class="time_icon">
+						<span class="time_counter">240 мин.</span>
+					</div>
+
+					<div class="rating">
+						<img src="image/imdb.png" alt="рейтинг" class="rating_icon">
+
+						<span class="rating_counter">
+							<strong class="rating_current">9.2</strong> / 10
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" class="film_treiler">
+				<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="50" cy="50" r="50" fill="white"/>
+				<g clip-path="url(#clip0_1:158)">
+				<path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+				</g>
+				<defs>
+				<clipPath id="clip0_1:158">
+				<rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+				</clipPath>
+				</defs>
+				</svg>
+
+			</a>
+		</div>
+
+		<div class="session conteiner">
+			<div class="session_data">
+				<span class="session_lable">Дата</span>
+
+				<div class="session_date_block">
+					<div class="session_date_item">
+						<span class="session_month">АПР</span>
+						<span class="session_day">27</span>
+						<span class="session_week">пт</span>
+					</div>
+
+					<div class="session_date_item">
+						<span class="session_month">АПР</span>
+						<span class="session_day">28</span>
+						<span class="session_week">сб</span>
+					</div>
+
+					<div class="session_date_item">
+						<span class="session_month">АПР</span>
+						<span class="session_day">29</span>
+						<span class="session_week">вс</span>
+					</div>
+
+					<div class="session_date_item">
+						<span class="session_month">АПР</span>
+						<span class="session_day">30</span>
+						<span class="session_week">пн</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="session_cinema">
+				<span class="session_label">Кинотеатр</span>
+			</div>
+
+			<div class="session_time">
+				<span class="session_label">Время</span>
+			</div>
 		</div>
 	</header>
 
