@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-	min-height: 100vh;
+	padding-bottom: 60px;
 	background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(img/bg.jpg) no-repeat center top / cover;
 }
 
@@ -185,13 +185,17 @@ body {
 }
 
 .select_cinema {
-	min-width: 470px;
+	width: 470px;
 }
 
 .scheme {
 	margin-bottom: 40px;
 	background: rgba(36, 36, 36, 0.18);
 	border-radius: 10px;
+}
+
+.scheme_svg {
+	max-width: 1170px;
 }
 
 .scheme path:not(.light) {
@@ -217,6 +221,7 @@ body {
 	align-items: center;
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 	max-width: 1024px;
+	width: 90%;
 	margin: auto;
 	padding-top: 22px;
 	padding-bottom: 38px;
@@ -264,10 +269,52 @@ body {
 	padding: 24px 52px;
 }
 
+@media (max-width: 1200px) {
+	.conteiner {
+		max-width: 960px;
+	}
 
+	.select_cinema {
+		width: 100%;
+	}
+} 
 
+@media (max-width: 992px) {
+	.conteiner {
+		max-width: 750px;
+	}
 
+	.session {
+		flex-wrap: wrap;
+	}
 
+	.session_data {
+		flex-basis: 70%;
+	}
+
+	.session_time {
+		order: 2;
+	}
+
+	.session_cinema {
+		margin-top: 40px;
+		order: 3;
+	}
+
+	.menu_item {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.conteiner {
+		max-width: 560px;
+	}
+
+	.menu {
+		display: none;
+	}
+}
 
 
 
