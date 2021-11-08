@@ -11,6 +11,7 @@ body {
 .conteiner {
 	max-width: 1170px;
 	margin: auto;
+	width: 90%;
 }
 
 .header {
@@ -18,11 +19,21 @@ body {
 	background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(img/bg.jpg) no-repeat center top / cover;
 }
 
+
+
+.m_menu{
+	display: none;
+}
+
 .navbar {
 	display: flex;
 	align-items: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.nav {
+	position: relative;
 }
 
 .menu {
@@ -290,6 +301,7 @@ body {
 
 	.session_data {
 		flex-basis: 70%;
+		margin-bottom: 40px;
 	}
 
 	.session_time {
@@ -297,7 +309,6 @@ body {
 	}
 
 	.session_cinema {
-		margin-top: 40px;
 		order: 3;
 	}
 
@@ -312,7 +323,53 @@ body {
 	}
 
 	.menu {
-		display: none;
+		position: absolute;
+		left: 0;
+		top: 40px;
+		padding: 20px;
+		margin-left: 20px;
+		flex-direction: column;
+		background-color: #621402;
+		z-index: 9;
+		border-radius: 10px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(20%);
+		transition: opacity 0.5s, transform 0.5s;
+	}
+
+	.menu_item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	.m_menu {
+		display: block;
+		background-color: transparent;
+		border: none;
+		width: 40px;
+		height: 40px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+
+	.is-open {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.film_description {
+		margin-right: 30px;
+	}
+
+	.film {
+		flex-direction: column;
+	}
+
+	.film_treiler {
+		margin-right: auto;
+		margin-left: 0;
+		margin-top: 40px;
 	}
 }
 
